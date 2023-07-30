@@ -3,9 +3,6 @@ import React from 'react'
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
 
-import TestimonialCard1 from '../components/testimonial-card1'
-import TestimonialCard2 from '../components/testimonial-card2'
-import TestimonialCard4 from '../components/testimonial-card4'
 import './home.css'
 
 const Home = (props) => {
@@ -70,7 +67,7 @@ const Home = (props) => {
             data-role="Nav"
             className="home-nav1"
           >
-            <div className="home-container01">
+            <div className="home-container1">
               <span className="home-logo1">Character</span>
               <div data-thq="thq-close-menu" className="home-menu-close">
                 <svg viewBox="0 0 1024 1024" className="home-icon02">
@@ -89,7 +86,7 @@ const Home = (props) => {
               <span className="home-text03">Team</span>
               <span className="home-text04">Blog</span>
             </nav>
-            <div className="home-container02">
+            <div className="home-container2">
               <button className="home-login button">Login</button>
               <button className="button">Register</button>
             </div>
@@ -109,61 +106,10 @@ const Home = (props) => {
       </header>
       <section className="home-hero">
         <div className="home-heading">
-          <div className="home-container03"></div>
           <h1 className="home-header">Create yourself for the metaverse</h1>
           <p className="home-caption">
             A character custom collection is joining the NFT space on Opensea.
           </p>
-          <div className="home-testimonial">
-            <div className="home-container04">
-              <h1 className="home-text05">
-                <span>What they’re saying</span>
-                <br></br>
-                <span></span>
-              </h1>
-              <span className="home-text08">
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  non volutpat turpis. Mauris luctus rutrum mi ut rhoncus.
-                  Integer in dignissim tortor.
-                </span>
-              </span>
-              <div className="home-container05">
-                <TestimonialCard1
-                  picture_src="https://images.unsplash.com/photo-1557053910-d9eadeed1c58?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHdvbWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNjI2NDUxOTgy&amp;ixlib=rb-1.2.1&amp;h=1200"
-                  rootClassName="rootClassName2"
-                ></TestimonialCard1>
-                <TestimonialCard1 rootClassName="rootClassName"></TestimonialCard1>
-                <TestimonialCard1
-                  picture_src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHdvbWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNjI2NDUxOTgy&amp;ixlib=rb-1.2.1&amp;h=1200"
-                  rootClassName="rootClassName1"
-                ></TestimonialCard1>
-              </div>
-            </div>
-          </div>
-          <div className="home-testimonial1">
-            <div className="home-container06">
-              <div className="home-container07">
-                <div className="home-container08">
-                  <TestimonialCard2
-                    profile_src="https://images.unsplash.com/photo-1614630982169-e89202c5e045?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxtYWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNjI2NDUyMTk4&amp;ixlib=rb-1.2.1&amp;h=1200"
-                    rootClassName="rootClassName1"
-                  ></TestimonialCard2>
-                </div>
-                <TestimonialCard2
-                  profile_src="https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDV8fHBvcnRyYWl0JTIwYnd8ZW58MHx8fHwxNjI2NDUyMjQw&amp;ixlib=rb-1.2.1&amp;h=1200"
-                  rootClassName="rootClassName2"
-                ></TestimonialCard2>
-              </div>
-              <div className="home-container09">
-                <TestimonialCard4
-                  picture_src="https://images.unsplash.com/photo-1546456073-ea246a7bd25f?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDh8fGJsYWNrJTIwbWFufGVufDB8fHx8MTYyNjQ1MjAwOA&amp;ixlib=rb-1.2.1&amp;h=1200"
-                  profile_src="https://images.unsplash.com/photo-1553184118-d20774c4c1db?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxwb3J0cmFpdCUyMGJ3fGVufDB8fHx8MTYyNjQ1MjI0MA&amp;ixlib=rb-1.2.1&amp;h=1200"
-                  rootClassName="rootClassName"
-                ></TestimonialCard4>
-              </div>
-            </div>
-          </div>
         </div>
         <div className="home-buttons">
           <button className="button">View on Opensea</button>
@@ -176,18 +122,7 @@ const Home = (props) => {
           src="/hero-divider-1500w.png"
           className="home-divider-image"
         />
-        <div className="home-div">
-          <Script
-            html={`<iframe
-    src="https://bafybeidpp4d3znpjxlvlhitaylbqwmyk2gzcxazp5wkftvwu7r3lsyku2q.ipfs-public.thirdwebcdn.com/?contract=0x7BB6D8B09B63c91e1253EcC7E88751f761c32814&chain=%7B%22name%22%3A%22Mumbai%22%2C%22chain%22%3A%22Polygon%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fmumbai.rpc.thirdweb.com%2F5a9bc94b87f7cbbbfbbc234bf1e07f0adf5f3cf3012c9f26f9fc9820d64df93a%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22MATIC%22%2C%22symbol%22%3A%22MATIC%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22maticmum%22%2C%22chainId%22%3A80001%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22mumbai%22%7D&primaryColor=purple"
-    width="600px"
-    height="600px"
-    style="max-width:100%;"
-    frameborder="0"
-    ></iframe>`}
-          ></Script>
-        </div>
-        <div className="home-container10">
+        <div className="home-container3">
           <div className="home-description01">
             <div className="home-content">
               <p className="home-paragraph">
@@ -252,7 +187,7 @@ const Home = (props) => {
                 </p>
               </div>
               <button className="home-learn1 button">
-                <span className="home-text12">Learn more</span>
+                <span className="home-text07">Learn more</span>
                 <img
                   alt="image"
                   src="/Icons/arrow.svg"
@@ -282,7 +217,7 @@ const Home = (props) => {
                 </p>
               </div>
               <button className="home-learn2 button">
-                <span className="home-text13">Learn more</span>
+                <span className="home-text08">Learn more</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
@@ -314,7 +249,7 @@ const Home = (props) => {
                 </p>
               </div>
               <button className="home-learn3 button">
-                <span className="home-text14">Learn more</span>
+                <span className="home-text09">Learn more</span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
@@ -1036,10 +971,6 @@ const Home = (props) => {
 `}
         ></Script>
       </div>
-      <iframe
-        src="https://www.youtube.com/embed/DeQkMK5LME4"
-        className="home-iframe"
-      ></iframe>
     </div>
   )
 }
